@@ -1,0 +1,16 @@
+.side-nav__brand {
+  background: url('allure_logo.jpg') no-repeat left center !important;
+  margin-left: 3px; /* 距离左边的间距 */
+  height: 68px; /* 图片的尺寸，正方形 */
+  background-size: contain !important;
+}
+
+
+.side-nav__brand span{
+  display: none;
+}
+.side-nav__brand:after{
+  content: "Fay_TestReports"; /*报告的名称 */
+  margin-left: 33px; /* 文字距离图片的间距 */
+  font-size: 12px; /*字体的最大是40px */
+}

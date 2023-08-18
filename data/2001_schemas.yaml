@@ -1,0 +1,68 @@
+# 正常生成01
+-
+  name: 生成接口
+  requests:
+    host: https://api-staging.airwallex.com/api/v1
+    url: /beneficiary_form_schemas/generate
+    method: post
+    headers:
+      Authorization:
+      Content-Type: application/json
+      x-client-id: kw5x9DYqRtGuBkNYrLCfQw
+      x-api-key: 22c85b1d3a7f74dfce22bc46e075a3bd2a164e082184de00865fb96375590a41ce2619fa07e82bf52c21c882f9a81532
+    data:
+      bank_country_code: HK
+      account_currency: HKD
+      entity_type: PERSONAL
+      payment_method: LOCAL
+
+  assert:
+      code: 200
+      err_code: null
+      err_msg: null
+
+# 正常生成02
+-
+  name: 生成接口
+  requests:
+    host: https://api-staging.airwallex.com/api/v1
+    url: /beneficiary_form_schemas/generate
+    method: post
+    headers:
+      Authorization:
+      Content-Type: application/json
+      x-client-id: kw5x9DYqRtGuBkNYrLCfQw
+      x-api-key: 22c85b1d3a7f74dfce22bc46e075a3bd2a164e082184de00865fb96375590a41ce2619fa07e82bf52c21c882f9a81532
+    data:
+      bank_country_code: US
+      account_currency: USD
+      entity_type: PERSONAL
+      payment_method: LOCAL
+
+  assert:
+      code: 200
+      err_code: null
+      err_msg: null
+
+# 正常生成03
+-
+  name: 生成接口
+  requests:
+    host: https://api-staging.airwallex.com/api/v1
+    url: /beneficiary_form_schemas/generate
+    method: post
+    headers:
+      Authorization:
+      Content-Type: application/json
+      x-client-id: kw5x9DYqRtGuBkNYrLCfQw
+      x-api-key: 22c85b1d3a7f74dfce22bc46e075a3bd2a164e082184de00865fb96375590a41ce2619fa07e82bf52c21c882f9a81532
+    data:
+      bank_country_code: CN
+      account_currency: CNY
+      entity_type: PERSONAL
+      payment_method: LOCAL
+
+  assert:
+      code: 200
+      err_code: null
+      err_msg: null

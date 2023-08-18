@@ -1,0 +1,18 @@
+# 正常生成01
+-
+  name: 登录接口
+  requests:
+    host: https://api-staging.airwallex.com/api/v1
+    url: /authentication/login
+    method: post
+    headers:
+      Content-Type: application/json
+      x-client-id: kw5x9DYqRtGuBkNYrLCfQw
+      x-api-key: 22c85b1d3a7f74dfce22bc46e075a3bd2a164e082184de00865fb96375590a41ce2619fa07e82bf52c21c882f9a81532
+    data:
+  assert:
+      code: 200
+      err_code: 400
+      err_msg: null
+
+# 错误登录02
